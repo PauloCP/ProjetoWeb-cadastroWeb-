@@ -1,0 +1,117 @@
+Startando o mysql do xampp
+
+ sudo /opt/lampp/lampp start
+
+/opt/lampp$ sudo ./lampp startmysql
+
+--------------------------------------------
+
+Para acessar via terminal o mysql do xampp
+
+ sudo /opt/lampp/bin/mysql --user=root
+
+
+/opt/lampp/bin$ ./mysql -u root
+
+---------------------------------------------
+
+iniciar o eclipse ir ate a pasta do eclipse 
+cd /home/paulo/java/eclipse/eclipse
+./iniciar-eclipse.sh
+
+---------------------------------------------
+
+instalar o Jboss tools
+
+menu window/show view/other/servers
+
+adicionar o wildfly op. servers botão direito op. new/server/ select the server type/ wildfly 8.x/ next 
+
+-----------------------------------------------
+
+Comandos sql
+
+Listar banco de dados- SHOW DATABASES;
+Usar banco de dados - USE base de dados;
+Listar tabelas- SHOW TABLES;
+Mostra a descrição da tabela- DESCRIBE tabela;
+Mostra todos os campos da tabela- SELECT* FROM tabela;
+Mostra os dados que foram entroduzidos nos campos da tabela - SELECT nome do campo FROM nome da tabela;
+
+----------------------------------------------------
+
+
+*****A forma mais simples de instalar o JDK 7 no Ubuntu 13.10 é utilizar o repositório ppa criado pelo pessoal do Web Upd8. Abra um terminal com o atalho CTRL+ALT+T e execute os seguites comandos.
+
+    Adicione o repositório do Web Upd8.
+
+    sudo add-apt-repository ppa:webupd8team/java
+    Atualize a lista de pacotes disponíveis.
+
+    sudo apt-get update
+    Finalmente, instale o pacote do JDK 7.
+
+    sudo apt-get install oracle-java7-installer
+    Para verificar se a instalação funcionou, verifique a versão do JDK com o seguinte comando.
+
+    java -version
+    Você também pode verificar a versão do compilador.
+
+    javac -version
+
+
+-----------------------------------------------------------
+
+Comandos GIT
+
+Primeiros passos
+
+Nome e-mail do autor
+
+git config --global user.name "seu nome"
+git config --global user.email "seu e-mail"
+
+git unit   cria um diretório .git
+
+git add adiciona arquivos ao indice
+
+
+
+
+
+
+
+http://blog.gustavohenrique.net/2011/03/comandos-basicos-do-git/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
