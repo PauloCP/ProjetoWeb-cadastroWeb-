@@ -5,7 +5,7 @@ import java.io.PrintWriter;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
-
+import java.text.ParseException;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -14,8 +14,6 @@ import javax.servlet.http.HttpServletResponse;
 
 import br.com.paulocp.jdbc.classes.Contato;
 import br.com.paulocp.jdbc.classes.ContatoDAO;
-
-import com.sun.org.apache.xerces.internal.impl.xpath.regex.ParseException;
 
 
 @WebServlet("/AdicionaContatoServlet")
@@ -34,14 +32,15 @@ public class AdicionaContatoServlet extends HttpServlet {
 	Calendar dataNascimento=null;
 	
 	//fazendo a conversão da data
+	
 	try{
-		Date date = new SimpleDateFormat("dd/MM/yyyy").parse(dataEmTexto);//erro
+		Date date = new SimpleDateFormat("dd/MM/yyyy").parse(dataEmTexto);
 		dataNascimento = Calendar.getInstance();
 		dataNascimento.setTime(date);
-		}catch (ParseException e){
-			out.println("Erro de converção");
-			return;
-		}
+	}catch (ParseException e){
+		out.println("Erro de converção");
+		return;
+	}
 
 	//monta o objeto contato
 	Contato contato = new Contato();
