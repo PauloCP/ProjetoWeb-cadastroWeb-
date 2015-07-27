@@ -7,11 +7,13 @@
 <body>
 	<h1>Adiciona Contato</h1>
 	<hr />     
-	<form action = "AdicionaContatoServlet">
+	<form action = "AdicionaContatoServlet" method="POST"><!-- o metodo post não esta funcionando
+															no servlet esta sendo usado o método service
+															que aceita os dois métodos   -->
 		Nome:<input type="text" name="nome"/><br />
 		E-mail:<input type="text" name="email"/><br />
 		Endereço:<input type="text" name="endereco"><br />
-		Data de nascimento: <input title="text" name="dataNascimento"/><br />
+		Data de nascimento: <input title="text" name="datanascimento"/><br />
 		<hr />
 		<input type="submit" value="Gravar">
 	</form>
