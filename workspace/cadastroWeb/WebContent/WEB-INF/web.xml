@@ -8,7 +8,7 @@
       
       <error-page>
       	<exception-type>java.lang.Exception</exception-type>
-      	<location>/errocc.html</location>
+      	<location>/erro.html</location>
       </error-page>
       
       <error-page>
